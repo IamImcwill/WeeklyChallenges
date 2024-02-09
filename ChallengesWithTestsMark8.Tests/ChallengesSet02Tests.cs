@@ -153,7 +153,7 @@ namespace ChallengesWithTestsMark8.Tests
             ChallengesSet02 challenger = new ChallengesSet02();
 
             // Act
-            int actual = challenger.GetLengthOfShortestString(str1, str2);
+            int actual = challenger.GetLengthOfShortestString(str1 , str2);
 
             // Assert
             Assert.Equal(expected, actual);
