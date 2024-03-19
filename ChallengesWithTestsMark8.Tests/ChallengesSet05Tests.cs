@@ -26,6 +26,7 @@ namespace ChallengesWithTestsMark8.Tests
             Assert.Equal(expected, actual);
         }
 
+
         [Theory]
         [InlineData(new[] { "Test1", "Test2", "Test3", "Test4" }, new[] { 100d, 10d, 0d, 250d })]
         [InlineData(new[] { "Test1", "Test2", "Test3", "Test4" }, new[] { 0.5d, 0d, 0d, 1d })]
@@ -160,7 +161,7 @@ namespace ChallengesWithTestsMark8.Tests
             List<double> numbersAsList = numbers == null ? null : new List<double>(numbers);
 
             // Act
-            double[] actual = challenger.GetEveryFourthElement(numbersAsList);
+            double[] actual = challenger.GetEveryFourthElement(numbersAsList, challenger.GetElements());
 
             // Assert
             Assert.Equal(expected.Length, actual.Length);
